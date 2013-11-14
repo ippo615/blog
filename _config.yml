@@ -1,0 +1,7 @@
+name: Andrew Ippoliti's Blog
+markdown: redcarpet
+pygments: true
+permalink: :title
+paginate: 20
+baseurl: /blog
+

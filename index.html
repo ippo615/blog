@@ -1,0 +1,38 @@
+---
+layout: default
+title: Andrew Ippoliti's Blog
+---
+
+<div id="main">
+
+  <!-- List the posts -->
+  {% for post in paginator.posts %}
+  <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+    <span class='by-line'>{{ post.date | date_to_string }} by: {{ post.author }}</span> 
+    <p>{{ post.excerpt }}</p>
+  </a>
+  {% endfor %}
+
+  <!-- Links to the other pages of posts (if we have more than 1 page) -->
+  {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+
+    {% if paginator.previous_page %}
+      <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+      <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+    {% else %}
+      <span class="next ">Next</span>
+    {% endif %}
+    </div>
+  {% endif %}
+
+</div>
+
