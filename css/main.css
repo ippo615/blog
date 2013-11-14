@@ -1,0 +1,99 @@
+body { font-size: 16px; }
+
+.site { max-width: 768px; margin: auto;}
+.post-link {
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	display: block;
+	margin: 0.5em;
+	padding: 0.5em;
+	white-space: normal;
+}
+.share { padding: 0.5em; }
+.post-link h2 {margin: 0;}
+.by-line {color: #999; font-size: 0.8em; margin:0;}
+.post-link:hover {
+	background-color: #EEE;
+}
+h1, h2 { margin: 0; }
+
+pre {
+	background-color: #FBFBFB;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	padding: 0.5em;
+	line-height: 1;
+}
+pre code {
+	border: none;
+	font-weight: normal;
+	background: none;
+	padding: none;
+	border-radius: none;
+}
+
+blockquote {
+	margin: 1em 3em;
+	color: #999;
+	border-left: 2px solid #999;
+	padding-left: 1em;
+}
+
+code, kbd, samp, tt, var {
+	padding: 0.2em;
+	font-size: 0.75em;
+	font-weight: bold;
+    background-color: #FBFBFB;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+}
+
+del, strike {
+	text-decoration: line-through;
+	color: #AAA;
+}
+
+.header {
+	border: 1px solid #DDD;
+	border-radius: 0px 0px 4px 4px;
+	border-top: none;
+	background-color: #EEE;
+	padding: 1em;
+}
+.main {
+	padding-top: 1em;
+	margin: 1em;
+}
+
+.footer { position: relative; }
+.footer:before, .footer:after {
+	content: "";
+	position: absolute;
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+hr {
+	top: -1px;
+	height: 1px;
+	width: 100%;
+	background-color: #DDD;
+	background-image: -ms-radial-gradient(center, circle cover, #999999 2.79%, #ffffff 93.64%);
+	background-image: -moz-radial-gradient(center, circle cover, #999999 2.79%, #ffffff 93.64%);
+	background-image:-o-linear-gradient(center,rgb(153,153,153) 2.79%,rgb(255,255,255) 93.64%);
+	background-image: -o-radial-gradient(center, circle cover, #999999 2.79%, #ffffff 93.64%);
+	background-image: -webkit-gradient(radial, center center,2.79, center center, 874, color-stop(2.79, #999999), color-stop(93.64, #ffffff));
+	background-image: -webkit-radial-gradient(center, circle cover, #999999 2.79%, #ffffff 93.64%);
+	background-image: radial-gradient(center, circle cover, #999999 2.79%, #ffffff 93.64%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr='#999999', endColorstr='#ffffff',GradientType=0);
+}
+
+.footer {
+	padding: 1em 1em 0 1em;
+	border-top: 1px solid #DDD;
+}

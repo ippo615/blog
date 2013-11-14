@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width" />
+
+		<!-- important seo meta tags ? -->
+		<meta name="description" content="{{ page.excerpt }}" />
+		<meta name="keywords" content="{{ page.tags }}" />
+		<meta name="author" content="{{ page.author }}" />
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css"/>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"/>
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+          </div>
+
+          <div class="main">
+          {{ content }}
+          </div>
+
+          <div class="footer">
+            <div class="contact">
+				<!-- Twitter Follow Button -->
+				<a href="https://twitter.com/ippo615" class="twitter-follow-button" data-show-count="false">Follow @ippo615</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<!-- Github Follow Button -->
+				<iframe src="http://ghbtns.com/github-btn.html?user=ippo615&type=follow" height="20" width="168" frameborder="0" scrolling="0" style="width:168px; height: 20px;" allowTransparency="true"></iframe>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
